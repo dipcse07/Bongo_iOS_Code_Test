@@ -29,7 +29,7 @@ extension ViewController {
           let castedString = String(string)
           let mappedArray = castedString.map { String($0) }
         
-         var showTheNthCharecter = "Showing the result of Every 10th Character \n"
+         var showTheNthCharecter = "\nShowing the result of Every 10th Character \n"
 
           for i in 1...charecterCounter {
               if i * 10 < string.length {
@@ -87,6 +87,7 @@ extension ViewController {
                             resultDictionary.updateValue(1, forKey: tmpWord)
                         }
                     }
+        print("\nThe Count Of Each Word: \n \(resultDictionary)")
         return resultDictionary
           
       }
