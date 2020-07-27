@@ -14,6 +14,12 @@
 		3E083F7D24CB3043006C2DCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E083F7C24CB3043006C2DCD /* Assets.xcassets */; };
 		3E083F8024CB3043006C2DCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E083F7E24CB3043006C2DCD /* LaunchScreen.storyboard */; };
 		3E083F8B24CB3043006C2DCD /* Bongo_iOS_Code_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E083F8A24CB3043006C2DCD /* Bongo_iOS_Code_TestTests.swift */; };
+		3E083F9624CB337B006C2DCD /* NetworManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E083F9524CB337B006C2DCD /* NetworManager.swift */; };
+		3E083F9C24CB340C006C2DCD /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E083F9B24CB340C006C2DCD /* Constant.swift */; };
+		3E8B746624CDB7E000B5A5BA /* CounterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8B746524CDB7E000B5A5BA /* CounterExtension.swift */; };
+		3E8B746A24CDBFE000B5A5BA /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8B746924CDBFE000B5A5BA /* RoundedButton.swift */; };
+		3E8B746C24CDC69400B5A5BA /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8B746B24CDC69400B5A5BA /* CustomTextView.swift */; };
+		3E8E7FA324CC6BC500175B78 /* ProtocolsDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8E7FA224CC6BC400175B78 /* ProtocolsDelegates.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +44,13 @@
 		3E083F8624CB3043006C2DCD /* Bongo iOS Code TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bongo iOS Code TestTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E083F8A24CB3043006C2DCD /* Bongo_iOS_Code_TestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bongo_iOS_Code_TestTests.swift; sourceTree = "<group>"; };
 		3E083F8C24CB3043006C2DCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E083F9524CB337B006C2DCD /* NetworManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworManager.swift; sourceTree = "<group>"; };
+		3E083F9B24CB340C006C2DCD /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		3E695F8524CEC4CC00A0791B /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
+		3E8B746524CDB7E000B5A5BA /* CounterExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterExtension.swift; sourceTree = "<group>"; };
+		3E8B746924CDBFE000B5A5BA /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		3E8B746B24CDC69400B5A5BA /* CustomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
+		3E8E7FA224CC6BC400175B78 /* ProtocolsDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolsDelegates.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +74,7 @@
 		3E083F6724CB303D006C2DCD = {
 			isa = PBXGroup;
 			children = (
+				3E695F8524CEC4CC00A0791B /* Readme.md */,
 				3E083F7224CB303D006C2DCD /* Bongo iOS Code Test */,
 				3E083F8924CB3043006C2DCD /* Bongo iOS Code TestTests */,
 				3E083F7124CB303D006C2DCD /* Products */,
@@ -79,9 +93,12 @@
 		3E083F7224CB303D006C2DCD /* Bongo iOS Code Test */ = {
 			isa = PBXGroup;
 			children = (
-				3E083F7324CB303E006C2DCD /* AppDelegate.swift */,
-				3E083F7524CB303E006C2DCD /* SceneDelegate.swift */,
-				3E083F7724CB303E006C2DCD /* ViewController.swift */,
+				3E083F9D24CB3496006C2DCD /* RootDelegate */,
+				3E8E7FA124CC6B8500175B78 /* Protocols&Delegates */,
+				3E083F9724CB339F006C2DCD /* Utils */,
+				3E083F9824CB33B0006C2DCD /* Model */,
+				3E083F9924CB33C9006C2DCD /* View */,
+				3E083F9A24CB33D6006C2DCD /* Controller */,
 				3E083F7924CB303E006C2DCD /* Main.storyboard */,
 				3E083F7C24CB3043006C2DCD /* Assets.xcassets */,
 				3E083F7E24CB3043006C2DCD /* LaunchScreen.storyboard */,
@@ -97,6 +114,57 @@
 				3E083F8C24CB3043006C2DCD /* Info.plist */,
 			);
 			path = "Bongo iOS Code TestTests";
+			sourceTree = "<group>";
+		};
+		3E083F9724CB339F006C2DCD /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3E083F9B24CB340C006C2DCD /* Constant.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		3E083F9824CB33B0006C2DCD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3E083F9524CB337B006C2DCD /* NetworManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3E083F9924CB33C9006C2DCD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3E8B746924CDBFE000B5A5BA /* RoundedButton.swift */,
+				3E8B746B24CDC69400B5A5BA /* CustomTextView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3E083F9A24CB33D6006C2DCD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3E083F7724CB303E006C2DCD /* ViewController.swift */,
+				3E8B746524CDB7E000B5A5BA /* CounterExtension.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3E083F9D24CB3496006C2DCD /* RootDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				3E083F7324CB303E006C2DCD /* AppDelegate.swift */,
+				3E083F7524CB303E006C2DCD /* SceneDelegate.swift */,
+			);
+			path = RootDelegate;
+			sourceTree = "<group>";
+		};
+		3E8E7FA124CC6B8500175B78 /* Protocols&Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				3E8E7FA224CC6BC400175B78 /* ProtocolsDelegates.swift */,
+			);
+			path = "Protocols&Delegates";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,9 +268,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E8E7FA324CC6BC500175B78 /* ProtocolsDelegates.swift in Sources */,
+				3E083F9624CB337B006C2DCD /* NetworManager.swift in Sources */,
+				3E8B746C24CDC69400B5A5BA /* CustomTextView.swift in Sources */,
 				3E083F7824CB303E006C2DCD /* ViewController.swift in Sources */,
+				3E8B746A24CDBFE000B5A5BA /* RoundedButton.swift in Sources */,
+				3E083F9C24CB340C006C2DCD /* Constant.swift in Sources */,
 				3E083F7424CB303E006C2DCD /* AppDelegate.swift in Sources */,
 				3E083F7624CB303E006C2DCD /* SceneDelegate.swift in Sources */,
+				3E8B746624CDB7E000B5A5BA /* CounterExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
