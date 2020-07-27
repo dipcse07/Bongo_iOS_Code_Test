@@ -35,7 +35,7 @@ struct NetworkManger {
                 
 //                    theData = dataString!
                     
-                    print(dataString)
+                   // print(dataString)
                     
                     self.delegate?.printAndPassData(dataString!)
 
